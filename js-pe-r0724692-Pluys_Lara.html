@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening xxx</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+    
+     <style>
+    body {
+        margin-top: 60px;
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-bottom: 60px;
+    }
+
+    .navbar {
+        
+        background-image: linear-gradient(90deg, rgba(13,60,75,1) 0%, rgba(9,121,97,1) 35%, rgba(85,172,177,1) 100%);
+    }
+
+    #form{
+        text-align: center;
+
+    }
+
+  
+
+</style>
+
+<body>
+
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Anoroc Services</a>
+    </nav>
+    <h1>Registreer</h1>
+    <p>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</p>
+    
+
+<div class="row">
+    <!--eerste rij -->
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputVoornaam">Voornaam</label>
+          <input type="text" class="form-control" id="inputVoornaam" placeholder="Uw voornaam">
+        </div>
+          
+        <div class="form-group col-md-6">
+          <label for="inputNaam">Naam</label>
+          <input type="text" class="form-control" id="inputNaam" placeholder="Uw naam">
+        </div>
+      </div>
+        
+                
+      <div class="form-row">
+           <!--tweede rij -->
+        <div class="form-group col-md-6">
+            <label for="inputGebruikersnaam">Gebruikersnaam</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" class="form-control" id="inputGebruikersnaam" placeholder="u911236">
+                </div>
+        </div>
+          
+        <div class="form-group col-md-6">
+          <label for="inputEmail">E-mailadres</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="mail@example.be">
+        </div>
+      </div>
+        
+    
+    <div class="form-row">
+     <!--derde rij -->
+        <div class="form-group col-md-6">
+          <label for="inputWachtwoord">Wachtwoord</label>
+          <input type="password" class="form-control" id="inputWachtwoord">
+            <small id="passwordHelpBlock" class="form-text text-muted">
+                Je wachtwoord moet minstens 8 tekens lang zijn
+            </small>
+        </div>
+        
+        <div class="form-group col-md-6">
+          <label for="inputHerhaalWachtwoord">Herhaal wachtwoord</label>
+          <input type="password" class="form-control" id="inputHerhaalWachtwoord">
+        </div>
+    </div>
+        
+      <div class="form-group">
+          <!--vierde rij -->
+        <label for="inputAdres">Adres</label>
+        <input type="text" class="form-control" id="inputAdres" placeholder="Uw adres en huisnummer">
+      </div>
+        
+        
+    <div class="form-row">
+        <!--vijfde rij -->
+        <div class="form-group col-md-6">
+          <label for="inputLand">Land</label>
+          <select class="form-control" id="inputLand">
+            <option value="" selected disabled>Kies een land</option>  <!--selected disabled zodat deze optie niet gekozen kan worden -->         
+                <option value="1">België</option>
+                <option value="2">Nederland</option>
+                <option value="3">Spanje</option>
+                <option value="4">Frankrijk</option>
+                <option value="5">Griekenland</option>
+                <option value="6">Ierland</option>
+            </select>       
+        </div>
+          
+        <div class="form-group col-md-4">
+          <label for="inputProvincie">Provincie</label>
+          <select class="form-control" id="inputProvincie">
+              <option value="" selected disabled>Kies een provincie</option>
+                <option value="1">Antwerpen</option>
+                <option value="2">Limburg</option>
+                <option value="3">Oost-Vlaanderen</option>
+                <option value="4">Henegouwen</option>
+                <option value="5">Namen</option>
+                <option value="6">Luik</option>
+            </select>      
+        </div>
+          
+        <div class="form-group col-md-2">
+          <label for="inputZip">Postcode</label>
+          <input type="text" class="form-control" id="inputPostcode">
+        </div>
+    </div>
+        
+    <hr> 
+
+        
+    <div class="form-row">
+        <!--zesde rij -->
+        <div class="form-group col-md-6">
+            <h4 class="title"><strong>Hou me op de hoogte</strong></h4> 
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="InschrijvenCheck">
+                    <label class="custom-control-label" for="InschrijvenCheck">Inschrijven voor onze nieuwsbrief</label>
+                </div> 
+                <br>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="VoorwaardenCheck">
+                    <label class="custom-control-label" for="VoorwaardenCheck">Ik ga akkoord met de algemene voorwaarden.</label>
+                </div>
+        </div>
+
+        <div class="form-group col-md-6">
+            <h4 class="title"><strong>Betaling</strong></h4>  
+            <div class="custom-control custom-radio">
+                <input type="radio" id="RadioBankingApp" name="customRadio" class="custom-control-input" value="Banking App">
+                <label class="custom-control-label" for="RadioBankingApp">Banking app</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="RadioOverschrijving" name="customRadio" class="custom-control-input" value="Overschrijving">
+                <label class="custom-control-label" for="RadioOverschrijving">Overschrijving</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="RadioVisaCard" name="customRadio" class="custom-control-input" value="Visa Card">
+                <label class="custom-control-label" for="RadioVisaCard">Visa Card</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="RadioPayPal" name="customRadio" class="custom-control-input" value="PayPal">
+                <label class="custom-control-label" for="RadioPayPal">PayPal</label>
+            </div>
+        </div>
+    </div> <hr>
+        
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="waveWand" onclick="clickButton">Wave your magic wand</button>
+        
+</form>
+
+    <div class="col-md-4">
+                <!--  ONTWERP HIER 3 ALERT MELDINGEN -->
+                <div class="alert alert-danger" id="errorAlert" role="alert">
+                    <h4><strong>Yikes, errors...</strong></h4>
+                    <p id="error"></p>
+                </div>
+                <div class="alert alert-success" id="succesAlert" role="alert">
+                    <h4><strong>Goed gedaan!</strong></h4>
+                    <p>Awww yeah, je werd geregistreerd.</p>
+                </div>
+                <div class="alert alert-info" id="infoAlert" role="alert">
+                    <h4><strong>Betalingswijze</strong></h4>
+                    <p id="info"></p>
+                </div>
+    </div>
+</div>
+    
+    
+    <script type="text/javascript">
+        // Start script.
+    
+     
+        //alerts verbergen
+         document.getElementById("errorAlert").style.display = "none";
+         document.getElementById("succesAlert").style.display = "none";
+         document.getElementById("infoAlert").style.display = "none";
+        
+        //array errors aanmaken
+        let errors  = [];
+    
+     
+        
+        //formulier valideren door alle functies aan te roepen
+        function validateForm(){
+            
+            checkEmptyField(document.getElementById("inputVoornaam").value, "Het veld voornaam is vereist.");
+            checkEmptyField(document.getElementById("inputNaam").value, "Het veld naam is vereist.");
+            checkEmptyField(document.getElementById("inputGebruikersnaam").value, "Het veld gebruikersnaam is vereist.");
+            checkEmptyField(document.getElementById("inputAdres").value, "Het veld adres is vereist.");
+            checkEmptyField(document.getElementById("inputLand").value, "Het veld land is vereist.");
+            checkEmptyField(document.getElementById("inputProvincie").value, "Het veld provincie is vereist.");
+            
+                
+            validateEmail(document.getElementById("inputEmail").value);
+            
+
+            validatePassword(document.getElementById("inputWachtwoord").value, document.getElementById("inputHerhaalWachtwoord").value);
+                        
+            
+            checkPC(document.getElementById("inputPostcode").value);
+            
+            checkbox();
+            
+           validatePayment(document.getElementById("RadioBankingApp").value);
+           validatePayment(document.getElementById("RadioOverschrijving").value);
+           validatePayment(document.getElementById("RadioVisaCard").value);
+           validatePayment(document.getElementById("RadioPayPal").value);
+
+
+            //als er errors zijn : tonen van het error alert met de array van errors, succes en info alert worden verborgen
+            if (errors .length != 0)
+            {
+                document.getElementById("succesAlert").style.display = "none";
+                document.getElementById("infoAlert").style.display = "none";
+                
+                document.getElementById("error").innerHTML = errors .join('<br>');     
+                document.getElementById("errorAlert").style.display = "block";
+                errors = [];
+
+                
+            }
+            //als er geen errors zijn : tonen van het succes alert en het info alert, error alert is verborgen
+            else
+            {
+                document.getElementById("errorAlert").style.display = "none";
+
+                document.getElementById("succesAlert").style.display = "block";
+                document.getElementById("infoAlert").style.display = "block";
+                   
+            }
+            
+        }
+        
+        
+        function checkEmptyField(veld, melding){
+            //https://www.w3schools.com/howto/howto_js_validation_empty_input.asp
+            //checken of het veld dat meegegeven wordt in de parameter leeg is, als het leeg is wordt er een melding in de array errors gepusht
+            
+            if (veld == "")
+                {
+                    errors.push(melding);
+                }
+    
+            
+            
+        }
+        
+        
+       
+ 
+        function validateEmail(email)
+        //https://www.w3resource.com/javascript/form/email-validation.php
+        //checken of er een geldig emailadres is opgegeven, als dit niet het geval is wordt de melding "E-mailadres is niet correct." gepusht in de error array
+        
+        {
+            let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if(email.match(mailformat))
+            {
+               
+                return true;
+            }
+            else
+            {
+                errors.push("E-mailadres is niet correct.");
+
+                return false;
+            }
+        }
+        
+        function validatePassword(wachtwoord, herhaalWachtwoord){
+            
+            //https://www.aspsnippets.com/Articles/Password-and-Confirm-Password-validation-using-JavaScript-and-jQuery.aspx
+            //https://stackoverflow.com/questions/39740832/password-validation-is-at-least-6-character/39877688
+            //https://discuss.codecademy.com/t/learning-javascript-password-validator-problems-with-if-then-statements/63466
+            
+            //checken of het veld wachtwoord en herhaal wachtwoord is ingevuld, als dit zo is dan wordt er gecheckt of het wachtwoord minstens 8 karakters heeft en of de velden wachtwoord en herhaal wachtwoord overeenkomen, als dit niet het geval is worden passende error melding gepusht in de error array
+            
+            
+            if(wachtwoord == "")
+            {
+                errors.push("Het veld wachtwoord is vereist.");
+            }
+            else if(wachtwoord.length < 8)
+            {
+                errors.push("wachtwoord moet minstens 8 karakters hebben.");
+            
+            }
+            
+            if(herhaalWachtwoord == "")
+            {
+                errors.push("Het veld herhaal wachtwoord is vereist.");
+            }
+            
+            else if(wachtwoord != herhaalWachtwoord){
+                
+                errors.push("wachtwoord komt niet overeen met herhaal wachtwoord.");
+            }
+            
+        }
+        
+     
+       
+        
+        
+        function validatePayment(veld) 
+        //https://www.geeksforgeeks.org/how-to-check-whether-a-radio-button-is-selected-with-javascript/
+        //checken of er een betalingswijze is aangeduid, als er één is aangeduid wordt de waarde hiervan in het info alert gezet. Als er geen is aangeduid wordt de gepaste error melding gepusht in de error array
+        
+        { 
+            
+            var checkRadio = document.querySelector(
+                'input[name="customRadio"]:checked');
+              
+            if(checkRadio != null) {
+                document.getElementById("info").innerHTML
+                    = "Je betalingswijze is " + checkRadio.value;
+            }
+            else {
+                errors.push("Er is geen betalingswijze geselecteerd.");
+            }
+        }
+    
+            
+            
+        function checkPC(veld){
+            //https://stackoverflow.com/questions/14718561/how-to-check-if-a-number-is-between-two-values
+            //checken of er iets is ingevuld in het veld postcode, als er niets is ingevuld wordt de gepaste error melding gepusht in de error array. Als er wel iets is ingevuld wordt er gecheckt of de opgegeven waarde tussen 1000 en 9999 ligt, als dit niet het geval is wordt er een gepaste error melding gepusht in de error array
+            
+            if(veld == ""){
+                
+                errors.push("Het veld postcode is vereist.");
+                                
+            }
+            
+            if(veld < 1000){
+                
+                errors.push("De waarde van postcode moet tussen 1000 en 9999 liggen.");
+
+            }
+            
+             if(veld > 10000){
+                errors.push("De waarde van postcode moet tussen 1000 en 9999 liggen.");
+                
+            }
+                    
+        }
+        
+        function checkbox() {
+        // https://stackoverflow.com/questions/9887360/how-can-i-check-if-a-checkbox-is-checked
+        //checken of het vakje met de algemene voorwaarden is aangevinkt, als dit niet zo is wordt er een gepaste error melding gepusht in de error array
+            
+        if (document.getElementById("VoorwaardenCheck").checked == false) {
+
+            errors.push("Je moet akkoord gaan met de algemene voorwaarden.");
+        } 
+    }
+       
+        
+        
+        //bij het klikken op de knop wordt de functie validateForm opgeroepen, dus wordt het formulier gevalideerd
+        document.getElementById("waveWand").onclick = function() {validateForm()};
+         
+        
+
+        // Einde script.
+    </script>
+
+</body>
+
+</html>
